@@ -1,0 +1,114 @@
+nav{background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    text-decoration: none;
+     font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.5s;
+  
+}
+
+
+#P{
+    color:red;
+}
+
+#Home{
+    color: red;
+    margin-left: 70%;
+}
+#registrar{
+    color:red;
+    margin-right: 5%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    
+}
+header h1{
+    color: red;
+  font-size: 4rem;
+  text-shadow: 0 0 1rem ;
+  text-align: center;
+}
+
+form{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin: 0 20rem 10rem 20rem;
+  box-shadow: 0 0 1rem #00000060;
+  border-radius: 1rem;
+  color: red;
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 2.5rem;
+  top:50%;
+  padding: 3rem;
+  
+}
+  
+
+
+
+    
+  
+
+
+
+button{
+    border: 1px solid red;
+    background-color:white;
+    color:red;
+    padding: 1rem;
+    font-size: 0.8vw;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 4rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    width: 40%;
+}
+
+section#message {
+    padding: 1rem;
+    background-color: lightblue;
+    color: black;
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-left: 2rem;
+  }
+  
+  span#close:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.2);
+  }

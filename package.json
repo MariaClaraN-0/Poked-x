@@ -1,0 +1,28 @@
+{
+  "name": "poked-x",
+  "version": "1.0.0",
+  "description": "Criação de uma pokédex(uma enciclopédia virtual portátil de alta tecnologia que os treinadores Pokémon transportam para registra todas as espécies diferentes de Pokémon.)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaClaraN-0/Poked-x.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariaClaraN-0/Poked-x/issues"
+  },
+  "homepage": "https://github.com/MariaClaraN-0/Poked-x#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
+  
