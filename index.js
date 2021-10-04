@@ -52,10 +52,4 @@ app.get("/detalhes", (req, res) => {
 
 
 
-
-
-
-
-
-
 app.listen(3000);
