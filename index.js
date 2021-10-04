@@ -7,7 +7,7 @@ const path = require("path");
 app.use(express.urlencoded());
 app.use(express.static(path.join(__dirname, "public")));
 
-let pokedex = [];
+const pokedex = [];
 let message = "";
 
 
@@ -37,9 +37,9 @@ app.post("/cadastro", (req, res) =>{
 
 
 app.get("/detalhes", (req, res) => {
-  res.render
-  let pokedetalhe = pokedex.find(x => x.numero == detalhe)
-  
+  res.render("detalhes",
+  pokedex)
+ 
 
 });
   
