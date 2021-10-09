@@ -20,6 +20,18 @@
 </section>
 
  <header><h1>Pokédex</h1></header>
+
+
+
+ <section>
+   <% pokedex.forEach(function(card, index){ %>
+    <div >
+      <a class="card" href="/detalhes/<%=index %>"><img src="<%= card.imagem%>" alt="Imagens Pokémons"></a>
+      <h2><%= card.nome %></h2>
+      <h4><%= card.tipo %></h4>
+    </div>
+  <% }) %>
+  </section>
  
 
 

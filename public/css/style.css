@@ -112,3 +112,56 @@ section#message {
     color: rgb(255, 0, 0);
     transform: scale(1.2);
   }
+
+  a.card {
+    width: 20rem;
+    padding: 3rem;
+    box-shadow: 0 0 1rem #00000060;
+    margin: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  
+  a.card:hover {
+    transform: scale(1.1);
+  }
+  
+  a.card img {
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  a.card h2 {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    color: #000;
+  }
+
+#imagem{
+  display:flex;
+  justify-content: center;
+}
+#info{
+  width: 20rem;
+    padding: 3rem;
+    box-shadow: 0 0 1rem #00000060;
+    margin: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}

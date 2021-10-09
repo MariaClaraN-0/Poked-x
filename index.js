@@ -13,11 +13,12 @@ let message = "";
 
 app.get("/", function (req, res) {
 
-  res.render("index",
+  res.render("index",{
   message,
-  
+  pokedex
+  });
 
-)});
+});
     
  
 
@@ -26,13 +27,14 @@ app.get("/cadastro", (req, res) => {
   res.render("cadastro")
   
 });
-app.post("/cadastro", (req, res) =>{
-  const { numero, nome, tipo, altura, peso, categoria, habilidade } = req.body;
-  let obj1 = { numero: numero, nome: nome, tipo: tipo, altura: altura, peso: peso, categoria: categoria, habilidade: habilidade };
-  pokedex.push(obj1);
-  res.redirect("/")
-});
 
+
+app.get("/detalhes/:indice",(req,res) =>{
+  const indice = parseInt(req.params.indice);
+  const pokemon = pokedex[indice];
+  res.render("detalhes",{ pokemon })
+
+});
 
 
 
@@ -42,6 +44,26 @@ app.get("/detalhes", (req, res) => {
  
 
 });
+
+app.post("/cadastro",(req, res) =>{
+  const {numero, nome, tipo, imagem, descricao, altura, peso, categoria, habilidade} = req.body;
+
+  pokedex.push({
+    numero,
+    nome,
+    tipo,
+    imagem,
+    descricao,
+    altura,
+    peso,
+    categoria,
+    habilidade
+
+  })
+  res.redirect("/");
+});
+
+
   
 
 

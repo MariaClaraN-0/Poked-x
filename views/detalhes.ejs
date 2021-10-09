@@ -13,15 +13,24 @@
         <a id="Home" href="/">Home</a>
         <a id="registrar" href="cadastro">Cadastro</a>
     </nav>
-    <section>
-        
-        <%= pokedex.numero %>
-        <%= pokedex.nome %>
-        <%= pokedex.tipo %>
-        <%= pokedex.imagem %>
-        <%= pokedex.categoria %>
-        <%= pokedex.habilidade %>
+    <section id="imagem">
+       <img src="<%= pokemon.imagem%>" class="imagem-pokemon" alt="Imagens-Pokémons">
+    </section>
 
+    <section id="info">
+        <div>
+            <p><%= pokemon.descricao %></p>
+        </div>
+        <div>
+            <p>Altura: <%= pokemon.altura %></p>
+            <p>Categoria: <%= pokemon.categoria %></p>
+            <p>Peso: <%= pokemon.peso %></p>
+            <p>Habilidade: <%= pokemon.habilidade %></p>
+        </div>
+        <div>
+            <p>Tipo:</p>
+            <p><%= pokemon.tipo %></p>
+        </div>
     </section>
     
 
