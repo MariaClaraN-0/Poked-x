@@ -13,6 +13,11 @@ let message = "";
 
 app.get("/", function (req, res) {
 
+  setTimeout(() => {
+    message = "";
+  }, 1000);
+
+
   res.render("index",{
   message,
   pokedex
@@ -60,6 +65,7 @@ app.post("/cadastro",(req, res) =>{
     habilidade
 
   })
+  message = 'Seu pokémon foi realizado com sucesso'
   res.redirect("/");
 });
 

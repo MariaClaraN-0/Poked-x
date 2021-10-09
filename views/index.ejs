@@ -15,9 +15,11 @@
     <a id="registrar" href="cadastro">Cadastro</a>
  </nav>
 
- <section id="message">
-  <p>Pokemon criado com sucesso!</p> <span id="close">&times;</span>
-</section>
+ <% if(message != "") {  %>
+  <section id="message">
+      <p><%= message %></p> <span id="close">&times;</span>
+  </section>
+<% }  %>
 
  <header><h1>Pokédex</h1></header>
 
@@ -39,7 +41,7 @@
 
 
  
-
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
