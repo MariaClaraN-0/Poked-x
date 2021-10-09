@@ -1,7 +1,7 @@
 const { render } = require("ejs");
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 app.set("view engine", "ejs");
 const path = require("path");
 app.use(express.urlencoded());
@@ -80,4 +80,4 @@ app.post("/cadastro",(req, res) =>{
 
 
 
-app.listen(3000);
+app.listen(8080);
